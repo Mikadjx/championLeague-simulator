@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champions League Simulator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Champions League Simulator 2024/2025</h1>
+
+    <div class="container mt-4">
+        <h2 class="text-center">Équipes</h2>
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>Nom</th>
+                    <th>Pays</th>
+                    <th>Coefficient</th>
+                </tr>
+            </thead>
+            <tbody id="team-table"></tbody>
+        </table>
+    </div>
+
+
+    <div id="matches">
+        <h2>Matchs</h2>
+        <button onclick="generateMatches()">Générer les matchs</button>
+        <button onclick="simulateMatches()">Simuler les matchs</button>
+        <ul id="match-list"></ul>
+    </div>
+
+    <div id="ranking">
+        <h2>Classement</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rang</th>
+                    <th>Équipe</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+            <tbody id="ranking-table"></tbody>
+        </table>
+    </div>
+    <div class="container">
+        <img src="./images/images.jfif" width="350px" height="300px" alt="image-foot">
+
+        <div id="music-player">
+            <h2>🎵 FIFA Classics Soundtrack</h2>
+            <audio id="audio-player" controls>
+                Votre navigateur ne supporte pas l'élément audio.
+            </audio>
+            <button onclick="playRandomTrack()">🔀 Changer de musique</button>
+        </div>
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
